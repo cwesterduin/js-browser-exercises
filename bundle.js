@@ -7,8 +7,18 @@ function newGreeting(){
     document.getElementById('greeting').textContent = "Hello from Ravil and Chris!"
 }
 
+function addParagraph(item){
+    const newPara = createParagraph(item)
+    document.getElementById('content').appendChild(newPara);
+}
 
-module.exports = { updateHeading, newGreeting }
+function createParagraph(item){
+    const newPara = document.createElement('p');
+    newPara.textContent = item;
+    return newPara
+}
+
+module.exports = { updateHeading, newGreeting, addParagraph }
 
 },{}],2:[function(require,module,exports){
 const helpers = require("./helpers");
@@ -26,6 +36,11 @@ function initBindings(){
 
     greeting.addEventListener('mouseover', () => {
         helpers.newGreeting()
+    })
+
+    document.addEventListener('keypress', (event) => {
+        helpers.addParagraph(event.key)
+        console.log(event.key)
     })
 }
 

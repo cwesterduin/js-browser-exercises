@@ -14,6 +14,11 @@ function initBindings(){
     greeting.addEventListener('mouseover', () => {
         helpers.newGreeting()
     })
+
+    document.addEventListener('keypress', (event) => {
+        helpers.addParagraph(event.key)
+        console.log(event.key)
+    })
 }
 
 initBindings();
