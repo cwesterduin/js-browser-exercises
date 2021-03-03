@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">23.08% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>3/13</span>
+                <span class='fraction'>13/13</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">33.33% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">25% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>3/12</span>
+                <span class='fraction'>12/12</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -96,24 +96,24 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -125,28 +125,28 @@ function defaultHeading(){
     document.getElementById('heading').style.background = "white";
 }
 &nbsp;
-function <span class="fstat-no" title="function not covered" >newGreeting(</span>){
-<span class="cstat-no" title="statement not covered" >    document.getElementById('greeting').textContent = "Hello from Ravil and Chris!"</span>
+function newGreeting(){
+    document.getElementById('greeting').textContent = "Hello from Ravil and Chris!"
 }
 &nbsp;
-function <span class="fstat-no" title="function not covered" >makeBold(</span>item){
-    let para = <span class="cstat-no" title="statement not covered" >document.getElementById(item)</span>
-<span class="cstat-no" title="statement not covered" >    if (para.className === "") {<span class="cstat-no" title="statement not covered" >para.className = "bold"}</span></span>
-    else {<span class="cstat-no" title="statement not covered" >para.className = ""}</span>
+function makeBold(item){
+    let para = document.getElementById(item)
+    if (para.className === "") {para.className = "bold"}
+    else {para.className = ""}
 }
 &nbsp;
-function <span class="fstat-no" title="function not covered" >addParagraph(</span>item){
-    const newPara = <span class="cstat-no" title="statement not covered" >createParagraph(item)</span>
-<span class="cstat-no" title="statement not covered" >    document.getElementById('content').appendChild(newPara);</span>
+function addParagraph(item){
+    const newPara = createParagraph(item)
+    document.getElementById('content').appendChild(newPara);
 }
 &nbsp;
-function <span class="fstat-no" title="function not covered" >createParagraph(</span>item){
-    const newPara = <span class="cstat-no" title="statement not covered" >document.createElement('p');</span>
-<span class="cstat-no" title="statement not covered" >    newPara.textContent = item;</span>
-<span class="cstat-no" title="statement not covered" >    return newPara</span>
+function createParagraph(item){
+    const newPara = document.createElement('p');
+    newPara.textContent = item;
+    return newPara
 }
 &nbsp;
-module.exports = { updateHeading, defaultHeading, newGreeting, addParagraph, makeBold }
+module.exports = { updateHeading, defaultHeading, newGreeting, addParagraph, createParagraph, makeBold }
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -154,7 +154,7 @@ module.exports = { updateHeading, defaultHeading, newGreeting, addParagraph, mak
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Wed Mar 03 2021 14:00:52 GMT+0000 (Greenwich Mean Time)
+                at Wed Mar 03 2021 14:37:52 GMT+0000 (Greenwich Mean Time)
             </div>
         </div>
         <script src="prettify.js"></script>

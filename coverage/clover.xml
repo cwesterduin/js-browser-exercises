@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1614780052651" clover="3.2.0">
-  <project timestamp="1614780052651" name="All files">
-    <metrics statements="12" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="2" elements="20" coveredelements="5" complexity="0" loc="12" ncloc="12" packages="1" files="1" classes="1"/>
+<coverage generated="1614782272526" clover="3.2.0">
+  <project timestamp="1614782272527" name="All files">
+    <metrics statements="12" coveredstatements="12" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="6" elements="20" coveredelements="20" complexity="0" loc="12" ncloc="12" packages="1" files="1" classes="1"/>
     <file name="helpers.js" path="C:\Users\Chris\1_welcome\js-browser-exercises\static\js\helpers.js">
-      <metrics statements="12" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="2"/>
+      <metrics statements="12" coveredstatements="12" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="6"/>
       <line num="2" count="1" type="stmt"/>
       <line num="6" count="1" type="stmt"/>
-      <line num="10" count="0" type="stmt"/>
-      <line num="14" count="0" type="stmt"/>
-      <line num="15" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="16" count="0" type="stmt"/>
-      <line num="20" count="0" type="stmt"/>
-      <line num="21" count="0" type="stmt"/>
-      <line num="25" count="0" type="stmt"/>
-      <line num="26" count="0" type="stmt"/>
-      <line num="27" count="0" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="14" count="2" type="stmt"/>
+      <line num="15" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
+      <line num="25" count="3" type="stmt"/>
+      <line num="26" count="3" type="stmt"/>
+      <line num="27" count="3" type="stmt"/>
       <line num="30" count="1" type="stmt"/>
     </file>
   </project>

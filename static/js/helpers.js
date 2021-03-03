@@ -27,4 +27,4 @@ function createParagraph(item){
     return newPara
 }
 
-module.exports = { updateHeading, defaultHeading, newGreeting, addParagraph, makeBold }
+module.exports = { updateHeading, defaultHeading, newGreeting, addParagraph, createParagraph, makeBold }

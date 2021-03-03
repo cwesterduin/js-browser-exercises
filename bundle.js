@@ -28,7 +28,7 @@ function createParagraph(item){
     return newPara
 }
 
-module.exports = { updateHeading, defaultHeading, newGreeting, addParagraph, makeBold }
+module.exports = { updateHeading, defaultHeading, newGreeting, addParagraph, createParagraph, makeBold }
 
 },{}],2:[function(require,module,exports){
 const helpers = require("./helpers");
