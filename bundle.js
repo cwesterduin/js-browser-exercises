@@ -42,7 +42,7 @@ function initBindings(){
         helpers.updateHeading()
     })
     heading.addEventListener('mouseout', () => {
-        heading.defaultHeading()
+        helpers.defaultHeading()
     })
 
     greeting.addEventListener('mouseover', () => {
