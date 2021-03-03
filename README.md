@@ -1,7 +1,7 @@
 # Website for js in the browser exercises
 
 ## todo
-- [ ] Create a webpage that has:
+- [x] Create a webpage that has:
 * A H1 tag
 * A H2 tag
 * A Header that contains a list of navigation items, styled to be horizontal across the top of the screen
