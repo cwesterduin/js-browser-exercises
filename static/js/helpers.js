@@ -2,6 +2,10 @@ function updateHeading(){
     document.getElementById('heading').style.background = "pink";
 }
 
+function defaultHeading(){
+    document.getElementById('heading').style.background = "white";
+}
+
 function newGreeting(){
     document.getElementById('greeting').textContent = "Hello from Ravil and Chris!"
 }
@@ -23,4 +27,4 @@ function createParagraph(item){
     return newPara
 }
 
-module.exports = { updateHeading, newGreeting, addParagraph, makeBold }
+module.exports = { updateHeading, defaultHeading, newGreeting, addParagraph, makeBold }

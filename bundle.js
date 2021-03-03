@@ -3,6 +3,10 @@ function updateHeading(){
     document.getElementById('heading').style.background = "pink";
 }
 
+function defaultHeading(){
+    document.getElementById('heading').style.background = "white";
+}
+
 function newGreeting(){
     document.getElementById('greeting').textContent = "Hello from Ravil and Chris!"
 }
@@ -24,7 +28,7 @@ function createParagraph(item){
     return newPara
 }
 
-module.exports = { updateHeading, newGreeting, addParagraph, makeBold }
+module.exports = { updateHeading, defaultHeading, newGreeting, addParagraph, makeBold }
 
 },{}],2:[function(require,module,exports){
 const helpers = require("./helpers");
@@ -38,7 +42,7 @@ function initBindings(){
         helpers.updateHeading()
     })
     heading.addEventListener('mouseout', () => {
-        heading.style.background = "white"
+        heading.defaultHeading()
     })
 
     greeting.addEventListener('mouseover', () => {

@@ -9,7 +9,7 @@ function initBindings(){
         helpers.updateHeading()
     })
     heading.addEventListener('mouseout', () => {
-        heading.style.background = "white"
+        heading.defaultHeading()
     })
 
     greeting.addEventListener('mouseover', () => {
