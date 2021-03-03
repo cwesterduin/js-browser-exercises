@@ -7,6 +7,12 @@ function newGreeting(){
     document.getElementById('greeting').textContent = "Hello from Ravil and Chris!"
 }
 
+function makeBold(item){
+    let para = document.getElementById(item)
+    if (para.className === "") {para.className = "bold"}
+    else {para.className = ""}
+}
+
 function addParagraph(item){
     const newPara = createParagraph(item)
     document.getElementById('content').appendChild(newPara);
@@ -18,7 +24,7 @@ function createParagraph(item){
     return newPara
 }
 
-module.exports = { updateHeading, newGreeting, addParagraph }
+module.exports = { updateHeading, newGreeting, addParagraph, makeBold }
 
 },{}],2:[function(require,module,exports){
 const helpers = require("./helpers");
@@ -26,6 +32,7 @@ const helpers = require("./helpers");
 function initBindings(){
     let heading = document.getElementById('heading')
     let greeting = document.getElementById('greeting')
+    let navItems = document.getElementsByClassName('nav-item')
 
     heading.addEventListener('click', () => {
         helpers.updateHeading()
@@ -42,6 +49,12 @@ function initBindings(){
         helpers.addParagraph(event.key)
         console.log(event.key)
     })
+
+    for (let i = 0; i < navItems.length; i++) {
+        navItems[i].addEventListener('click', () => {
+            helpers.makeBold(`item-${i + 1}-para`)
+        })
+    }
 }
 
 initBindings();

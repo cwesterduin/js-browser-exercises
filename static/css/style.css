@@ -16,8 +16,18 @@ nav > ul {
 
 nav > ul > li {
     list-style: none;
+    cursor: pointer;
 }
 
 h1, h2, section {
     text-align: center;
+}
+
+h2 {
+    color: rgba(121, 24, 121, 0.795)
+}
+
+.bold {
+    font-size: 1.5em;
+    font-weight: bolder;
 }
